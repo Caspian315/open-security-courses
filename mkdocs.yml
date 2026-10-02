@@ -1,0 +1,92 @@
+site_name: 开源安全精品课程
+site_description: 网安科协线下课程的学习入口、课程日程与公开资料库。
+site_url: !ENV [COURSE_SITE_URL, 'https://caspian315.github.io/open-security-courses/']
+repo_url: https://github.com/Caspian315/open-security-courses
+repo_name: Caspian315/open-security-courses
+edit_uri: edit/main/docs/
+copyright: 网安科协 · 开源安全精品课程
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+  font: false
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+plugins:
+  - search:
+      # Chinese words are segmented by jieba; use the bundled Lunr pipeline.
+      lang: en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: true
+
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: warn
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn
+
+nav:
+  - 首页: index.md
+  - 日程:
+      - schedule/index.md
+      - 2026 秋季: schedule/2026-fall/index.md
+      - 历史日程: schedule/archive.md
+  - 基础:
+      - courses/basic/index.md
+      - Git 与开源协作:
+          - courses/basic/git/index.md
+          - 2026 秋季 · 示例: courses/basic/git/2026-fall.md
+  - 开发:
+      - courses/development/index.md
+  - AI:
+      - courses/ai/index.md
+  - 科研:
+      - courses/research/index.md
+  - 网络安全:
+      - courses/security/index.md
+  - 关于:
+      - about/index.md
+      - 参与课程: about/participate.md
+      - 资料来源与署名: about/sources.md

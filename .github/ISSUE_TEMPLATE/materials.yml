@@ -1,0 +1,18 @@
+name: 资料错误或补充
+description: 反馈课程资料、日程或链接的问题。
+title: '[资料] '
+body:
+  - type: input
+    id: page
+    attributes:
+      label: 对应页面
+      description: 填写页面网址或课程与学期。
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题或补充建议
+      description: 描述错误、预期内容或建议补充的原始资源链接。
+    validations:
+      required: true
