@@ -11,6 +11,7 @@ description: 网安科协开源安全精品课程，查看线下日程、阅读�
 <p class="intro-copy">从计算机基础出发，一起学习开发、AI、科研与网络安全。这里集中保存课前准备、课堂讲义、课件和练习，方便课前预习与课后回看。</p>
 
 [查看本学期日程](schedule/2026-fall/index.md){ .md-button .md-button--primary }
+[浏览课程大纲](syllabus/index.md){ .md-button }
 [了解如何参与](about/participate.md){ .md-button }
 
 </div>

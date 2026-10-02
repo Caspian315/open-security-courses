@@ -69,6 +69,7 @@ validation:
 
 nav:
   - 首页: index.md
+  - 课程大纲: syllabus/index.md
   - 日程:
       - schedule/index.md
       - 2026 秋季: schedule/2026-fall/index.md
